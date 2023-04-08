@@ -20,7 +20,10 @@
 
 <body>
     <section class="our-producs">
+
         <!-- слайдер -->
+
+        <!-- <div dir="rtl" class="swiper"> - слайдер буде з права на ліво  -->
         <div class="swiper">
             <!-- хеш навігація -->
             <div class="swiper-wrapper">
@@ -79,16 +82,39 @@
                     </div>
                 </div>
 
+                <!-- слайдер lazy loading -->
+                <div data-hash="slider-9" class="swiper-slide">
+                    <div class="swiper-img">
+                        <!-- правила написання коду для lazy -->
+                        <!--шлях до зображення вказуємо в data-src / для src вказуємо зображення 1px -->
+                        <img data-src="./our-products-img/roasted-fruits-1x.jpg"
+                            src="./our-products-img/roasted-fruits-1x1.jpg" alt="pictures"
+                            class="swiper-slide-img swiper-lazy">
+                        <!-- спец-клас для lazy -->
+                        <div class="swiper-lazy-preloder"></div>
 
-
+                        <!-- слайдер + lazy loading + zoom -->
+                        <div data-hash="slider-10" class="swiper-slide">
+                            <!-- додаємо додатковий клас для самого зображення -->
+                            <div class="swiper-img swiper-zoom-container">
+                                <img src="./our-products-img/roasted-fruits-1x.jpg" alt="pictures"
+                                    class="swiper-slide-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- добавляємо якщо нам потрібні стрілки управління -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <!-- добавляємо якщо нам потрібна пагінація -->
-            <div class="swiper-pagination"></div>
-            <!-- добавляємо якщо потрібен скроллбар -->
-            <div class="swiper-scrollbar"></div>
+
+
+
+        </div>
+        <!-- добавляємо якщо нам потрібні стрілки управління -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- добавляємо якщо нам потрібна пагінація -->
+        <div class="swiper-pagination"></div>
+        <!-- добавляємо якщо потрібен скроллбар -->
+        <div class="swiper-scrollbar"></div>
         </div>
     </section>
     <!-- test -->
